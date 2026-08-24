@@ -57,12 +57,6 @@ ul {
   justify-content: space-between;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #f9faf8;
-}
-
 .site-nav ul {
   display: flex;
   gap: 24px;
@@ -71,6 +65,11 @@ ul {
 .site-nav a {
   font-size: 18px;
   color: #e5e7eb;
+}
+
+.logo-img {
+  height: 65px;
+  width: auto;
 }
 
 /* Hero */
