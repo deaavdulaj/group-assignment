@@ -160,12 +160,14 @@ ul {
 /* CTA banner */
 
 .cta {
-  background-color: #3882f6;
-  color: #ffffff;
   padding: 48px 0;
 }
 
-.cta-inner {
+.cta-box {
+  background-color: #3882f6;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
