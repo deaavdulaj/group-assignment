@@ -1,13 +1,13 @@
-@import url("fonts.css");
+@import url('fonts.css');
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   color: #1f2937;
 }
@@ -93,7 +93,8 @@ ul {
 
 .hero-content h1 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
+  color: #f9faf8;
   margin-bottom: 16px;
 }
 
