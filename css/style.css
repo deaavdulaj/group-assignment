@@ -201,6 +201,15 @@ blockquote {
   padding: 24px 0;
   margin: 0;
 }
+.quote .container {
+  display: flex;
+  flex-direction: column;
+}
+blockquote footer {
+  font-size: 28px;
+  text-align: right;
+  margin-top: 10px;
+}
 
 /* footer */
 
