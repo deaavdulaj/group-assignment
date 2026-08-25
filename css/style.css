@@ -213,6 +213,21 @@ blockquote footer {
   margin-top: 10px;
 }
 
+/* shop page css */
+
+.page-intro {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.page-intro h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.products .info-cards {
+  padding-bottom: 48px;
+}
 /* footer */
 
 .site-footer {
