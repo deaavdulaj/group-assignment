@@ -1,127 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Grind Co.</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container">
-        <img src="images/logo.png" alt="Daily Grind Co." class="logo-img" />
-        <nav class="site-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Grind Co.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- Main Content -->
-    <main class="site-main">
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-content">
-            <h1>One cup closer to a good day.</h1>
-            <p>
-              Single-origin coffee, espresso machines, and pods — delivered on
-              your schedule. Everything you need to make great coffee part of
-              everyday life.
-            </p>
-            <a href="shop.html" class="btn">Shop Now</a>
-          </div>
-          <img
-            src="images/banner.png"
-            alt="A bag of Daily Grind Co. coffee beans beside a filled cup"
-            class="hero-image"
-          />
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <!-- <img src="images/logo.png" alt="Daily Grind Co." class="logo-img" /> -->
+      <a href="index.html">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/coffee-bag-logo.png">
+          <source media="(min-width: 769px)" srcset="images/logo.png">
+          <img src="images/logo.png" alt="Daily Grind Co." class="logo-img" />
+        </picture>
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="site-main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>One cup closer to a good day.</h1>
+          <p>
+            Single-origin coffee, espresso machines, and pods — delivered on
+            your schedule. Everything you need to make great coffee part of
+            everyday life.
+          </p>
+          <a href="shop.html" class="btn">Shop Now</a>
         </div>
-      </section>
+        <img src="images/banner.png" alt="A bag of Daily Grind Co. coffee beans beside a filled cup"
+          class="hero-image" />
+      </div>
+    </section>
 
-      <!-- Info / features -->
-      <section class="info">
-        <div class="container">
-          <h2>Everything for your morning ritual</h2>
-          <div class="info-cards">
-            <div class="info-card">
-              <img
-                src="images/coffee-bag.png"
-                alt="A bag of Daily Grind Co. single-origin coffee beans"
-                class="info-card-box"
-              />
-              <h3>Single-Origin Beans</h3>
-              <p>Freshly roasted, sourced direct from small farms.</p>
-            </div>
+    <!-- Info / features -->
+    <section class="info">
+      <div class="container">
+        <h2>Everything for your morning ritual</h2>
+        <div class="info-cards">
+          <div class="info-card">
+            <img src="images/coffee-bag.png" alt="A bag of Daily Grind Co. single-origin coffee beans"
+              class="info-card-box" />
+            <h3>Single-Origin Beans</h3>
+            <p>Freshly roasted, sourced direct from small farms.</p>
+          </div>
 
-            <div class="info-card">
-              <img
-                src="images/espresso-machine.png"
-                alt="An espresso machine"
-                class="info-card-box"
-              />
-              <h3>Espresso Machines</h3>
-              <p>From starter machines to pro-grade setups.</p>
-            </div>
+          <div class="info-card">
+            <img src="images/espresso-machine.png" alt="An espresso machine" class="info-card-box" />
+            <h3>Espresso Machines</h3>
+            <p>From starter machines to pro-grade setups.</p>
+          </div>
 
-            <div class="info-card">
-              <img
-                src="images/accessories.png"
-                alt="Coffee accessories"
-                class="info-card-box"
-              />
-              <h3>Pods &amp; Accessories</h3>
-              <p>Compatible pods, grinders, and brewing gear.</p>
-            </div>
+          <div class="info-card">
+            <img src="images/accessories.png" alt="Coffee accessories" class="info-card-box" />
+            <h3>Pods &amp; Accessories</h3>
+            <p>Compatible pods, grinders, and brewing gear.</p>
+          </div>
 
-            <div class="info-card">
-              <img
-                src="images/togocup.png"
-                alt="Flexible subscription options"
-                class="info-card-box"
-              />
-              <h3>Flexible Subscriptions</h3>
-              <p>Pause, skip, or change your order anytime.</p>
-            </div>
+          <div class="info-card">
+            <img src="images/togocup.png" alt="Flexible subscription options" class="info-card-box" />
+            <h3>Flexible Subscriptions</h3>
+            <p>Pause, skip, or change your order anytime.</p>
           </div>
         </div>
-      </section>
-
-      <!-- Quote / testimonial -->
-      <section class="quote">
-        <div class="container">
-          <blockquote>
-            "Daily Grind turned my morning routine into something I actually
-            look forward to."
-            <footer>-Elena</footer>
-          </blockquote>
-        </div>
-      </section>
-
-      <!-- Call to action banner -->
-      <section class="cta">
-        <div class="container">
-            <div class="cta-box">
-                <div class="cta-text">
-                    <h2>Ready to start your day right?</h2>
-                    <p>Join thousands who've made Daily Grind part of their routine.</p>
-                </div>
-                <a href="#shop.html" class="btn">Shop Now</a>
-            </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Daily Grind Co. All rights reserved.</p>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Quote / testimonial -->
+    <section class="quote">
+      <div class="container">
+        <blockquote>
+          "Daily Grind turned my morning routine into something I actually
+          look forward to."
+          <footer>-Elena</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Call to action banner -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-text">
+            <h2>Ready to start your day right?</h2>
+            <p>Join thousands who've made Daily Grind part of their routine.</p>
+          </div>
+          <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Daily Grind Co. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
