@@ -385,6 +385,15 @@ blockquote footer {
   max-width: 220px;
 }
 
+.team-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #3882f6;
+  margin-bottom: 12px;
+}
+
 .team-member h3 {
   font-size: 16px;
   font-weight: 700;
