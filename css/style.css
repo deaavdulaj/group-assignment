@@ -61,15 +61,7 @@ ul {
 
 /* Burger Menu Dropdown / Overlay */
 .site-nav {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: #ffffff;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 .site-nav ul {
@@ -77,9 +69,6 @@ ul {
   gap: 24px;
   list-style: none;
   margin: 0;
-  padding: 1rem 0;
-  flex-direction: column;
-  align-items: center;
 }
 
 .site-nav a {
@@ -90,8 +79,9 @@ ul {
 }
 
 /* Open menu when checkbox is checked */
-.nav-toggle:checked ~ .site-nav {
-  max-height: 300px; /* Adjust according to contents */
+.nav-toggle:checked~.site-nav {
+  max-height: 300px;
+  /* Adjust according to contents */
 }
 
 .logo-img {
@@ -106,7 +96,7 @@ ul {
 
 /* Burger Icon Styling */
 .nav-toggle-label {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -119,7 +109,8 @@ ul {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: #333; /* Icon line color */
+  background: #333;
+  /* Icon line color */
   height: 3px;
   width: 28px;
   border-radius: 2px;
@@ -142,16 +133,16 @@ ul {
 }
 
 /* Transform icon to 'X' when checked */
-.nav-toggle:checked ~ .nav-toggle-label span {
+.nav-toggle:checked~.nav-toggle-label span {
   background: transparent;
 }
 
-.nav-toggle:checked ~ .nav-toggle-label span::before {
+.nav-toggle:checked~.nav-toggle-label span::before {
   bottom: 0;
   transform: rotate(45deg);
 }
 
-.nav-toggle:checked ~ .nav-toggle-label span::after {
+.nav-toggle:checked~.nav-toggle-label span::after {
   top: 0;
   transform: rotate(-45deg);
 }
@@ -279,6 +270,7 @@ ul {
 .quote {
   background-color: #e5e7eb;
 }
+
 blockquote {
   font-size: 36px;
   font-style: italic;
@@ -287,10 +279,12 @@ blockquote {
   padding: 24px 0;
   margin: 0;
 }
+
 .quote .container {
   display: flex;
   flex-direction: column;
 }
+
 blockquote footer {
   font-size: 28px;
   text-align: right;
@@ -312,6 +306,7 @@ blockquote footer {
 .products .info-cards {
   padding-bottom: 48px;
 }
+
 /* footer */
 
 .site-footer {
@@ -510,8 +505,35 @@ blockquote footer {
 
 /* Tablet Screen (768px wide) */
 @media (max-width: 767px) {
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
   .site-nav a {
     font-size: 1.25rem;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .site-nav a {
+    font-size: 1.25rem;
+    color: #1f2937;
+  }
+
+  .nav-toggle-label {
+    display: flex;
   }
 
   .hero-inner {
