@@ -407,6 +407,12 @@ blockquote footer {
 }
 
 /* contact page */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 16px;
 
 /* mobile version */
 @media (max-width: 767px) {
