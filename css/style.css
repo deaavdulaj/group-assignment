@@ -51,25 +51,109 @@ ul {
   padding: 16px 0;
 }
 
+/* Container layout setup */
 .site-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+/* Burger Menu Dropdown / Overlay */
+.site-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .site-nav ul {
   display: flex;
   gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-nav a {
+  text-decoration: none;
+  font-weight: 600;
   font-size: 18px;
   color: #e5e7eb;
+}
+
+/* Open menu when checkbox is checked */
+.nav-toggle:checked ~ .site-nav {
+  max-height: 300px; /* Adjust according to contents */
 }
 
 .logo-img {
   height: 65px;
   width: auto;
+}
+
+/* Hide the checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Burger Icon Styling */
+.nav-toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #333; /* Icon line color */
+  height: 3px;
+  width: 28px;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+/* Transform icon to 'X' when checked */
+.nav-toggle:checked ~ .nav-toggle-label span {
+  background: transparent;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 /* Hero */
@@ -415,7 +499,20 @@ blockquote footer {
   font-size: 16px;
 
 /* mobile version */
+/* Mobile Screen (up to 375px) */
+@media screen and (max-width: 375px) {
+  .site-nav ul {
+    gap: 1rem;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Tablet Screen (768px wide) */
 @media (max-width: 767px) {
+  .site-nav a {
+    font-size: 1.25rem;
+  }
+
   .hero-inner {
     flex-direction: column;
     align-items: stretch;
@@ -443,5 +540,16 @@ blockquote footer {
 
   .info-card {
     text-align: center;
+  }
+}
+
+/* Desktop Screen (1200px or wider) */
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    /* Retains burger menu style across desktop as requested */
+    max-width: 300px;
+    left: auto;
+    right: 0;
+    border-radius: 8px;
   }
 }
