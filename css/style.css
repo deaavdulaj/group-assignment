@@ -109,7 +109,7 @@ ul {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: #333;
+  background: #fcf9f9;
   /* Icon line color */
   height: 3px;
   width: 28px;
@@ -508,8 +508,8 @@ blockquote footer {
   .site-nav {
     position: absolute;
     top: 100%;
-    left: 0;
     right: 0;
+    width: 220px;
     background-color: #ffffff;
     max-height: 0;
     overflow: hidden;
