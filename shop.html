@@ -13,10 +13,7 @@
       <div class="container">
         <a href="index.html">
           <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="images/coffee-bag-logo.png"
-            />
+            <source media="(max-width: 768px)" srcset="images/coffee-bag-logo.png"/>
             <source media="(min-width: 769px)" srcset="images/logo.png" />
             <img src="images/logo.png" alt="Daily Grind Co." class="logo-img" />
           </picture>
@@ -25,17 +22,13 @@
 
         <!-- Pure HTML/CSS Burger Toggle -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label
-          for="nav-toggle"
-          class="nav-toggle-label"
-          aria-label="Toggle navigation menu"
-        >
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
           <span></span>
         </label>
         <nav class="site-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html" class="active" aria-current="page">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -72,7 +65,7 @@
       <section class="products">
         <div class="container">
           <div class="info-cards">
-            <div class="info-card">
+            <article class="info-card">
               <img
                 src="images/coffee-bag.png"
                 alt="Daily Grind Co. House Blend coffee bag"
@@ -80,10 +73,10 @@
               />
               <h3>House Blend</h3>
               <p>$14.00</p>
-              <a href="#" class="btn">Add to Cart</a>
-            </div>
+              <button type="button" class="btn">Add to Cart</button>
+            </article>
 
-            <div class="info-card">
+            <article class="info-card">
               <img
                 src="images/espresso-machine.png"
                 alt="Daily Grind Co. espresso machine"
@@ -91,10 +84,10 @@
               />
               <h3>Starter Espresso Machine</h3>
               <p>$189.00</p>
-              <a href="#" class="btn">Add to Cart</a>
-            </div>
+              <button type="button" class="btn">Add to Cart</button>
+            </article>
 
-            <div class="info-card">
+            <article class="info-card">
               <img
                 src="images/accessories.png"
                 alt="Coffee accessories set"
@@ -102,10 +95,10 @@
               />
               <h3>Accessories Kit</h3>
               <p>$29.00</p>
-              <a href="#" class="btn">Add to Cart</a>
-            </div>
+              <button type="button" class="btn">Add to Cart</button>
+            </article>
 
-            <div class="info-card">
+            <article class="info-card">
               <img
                 src="images/togocup.png"
                 alt="Reusable to-go cup"
@@ -113,8 +106,8 @@
               />
               <h3>To-Go Cup</h3>
               <p>$18.00</p>
-              <a href="#" class="btn">Add to Cart</a>
-            </div>
+              <button type="button" class="btn">Add to Cart</button>
+            </article>
           </div>
         </div>
       </section>
